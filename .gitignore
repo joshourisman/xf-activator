@@ -20,6 +20,9 @@ coverage
 # Dependency directory
 node_modules
 
+# build directory
+build
+
 # Optional npm cache directory
 .npm
 

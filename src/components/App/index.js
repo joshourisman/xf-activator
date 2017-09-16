@@ -173,6 +173,12 @@ export default class App extends React.Component {
                   You must select a network and enter the activation code on your screen.
                 </span>}
           </div>
+          <div className={css(styles.acknowledgement)}>
+            This tool is made possible thanks to the information compiled and published by{' '}
+            <a href="http://www.idownloadblog.com/2016/05/04/how-to-login-comcast-xfinity-apple-tv-abc-amc-hgtv-history-travel/">
+              Sébastien Page
+            </a>.
+          </div>
         </div>
       </div>
     );
@@ -197,5 +203,10 @@ const styles = StyleSheet.create({
     width: 250,
     display: 'flex',
     justifyContent: 'space-around',
+  },
+  acknowledgement: {
+    width: 250,
+    marginTop: 10,
+    fontSize: 10,
   },
 });
