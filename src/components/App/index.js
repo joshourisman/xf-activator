@@ -90,7 +90,9 @@ export default class App extends React.Component {
   };
 
   handleSelect = name => event => {
-    this.setState({ [name]: event.target.value });
+    const value = name === 'code' ? event.target.value.toUpperCase() : event.target.value;
+
+    this.setState({ [name]: value });
   };
 
   render() {
