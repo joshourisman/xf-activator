@@ -3,6 +3,8 @@ import compression from 'compression';
 import path from 'path';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
+import { Helmet } from 'react-helmet';
+
 import template from './template';
 import App from '../components/App';
 
@@ -24,6 +26,7 @@ app.get('*', (request, response) => {
   response.status(200).send(
     template({
       root: renderToString(<App />),
+      helmet: Helmet.renderStatic(),
       manifestJSBundle: clientAssets['manifest.js'],
       mainJSBundle: clientAssets['main.js'],
       vendorJSBundle: clientAssets['vendor.js'],

@@ -20,10 +20,12 @@ export default vo => `
       ? '<link rel="stylesheet" type="text/css" href="' + vo.mainCSSBundle + '">'
       : ''}
 
-    <title>Universal React Starter Kyt</title>
+    ${vo.helmet.title.toString()}
+    ${vo.helmet.meta.toString()}
+    ${vo.helmet.link.toString()}
   </head>
 
-  <body>
+  <body ${vo.helmet.bodyAttributes.toString()}>
     <div id="root"><div>${vo.root}</div></div>
     ${getDeferScript(vo.manifestJSBundle)}
     ${getDeferScript(vo.vendorJSBundle)}
