@@ -36,6 +36,6 @@
     "lint-script": "kyt lint-script",
     "lint-style": "kyt lint-style",
     "kyt:help": "kyt --help",
-    "postinstall": "yarn install && kyt build"
+    "postinstall": "kyt build"
   }
 }
