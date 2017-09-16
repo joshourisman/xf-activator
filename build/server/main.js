@@ -136,7 +136,7 @@ var _App2 = _interopRequireDefault(_App);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var clientAssets = __webpack_require__(16); // eslint-disable-line import/no-dynamic-require
+var clientAssets = __webpack_require__(15); // eslint-disable-line import/no-dynamic-require
 var port = parseInt("3000", 10);
 var app = (0, _express2.default)();
 
@@ -213,7 +213,7 @@ var getDeferScript = function getDeferScript(src) {
 };
 
 exports.default = function (vo) {
-  return '\n\n<!DOCTYPE html>\n<html lang="en">\n\n  <head>\n    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />\n    <meta charSet=\'utf-8\' />\n    <meta httpEquiv="Content-Language" content="en" />\n    <meta name="viewport" content="width=device-width, initial-scale=1">\n\n    <link id="favicon" rel="shortcut icon" href="/kyt-favicon.png" sizes="16x16 32x32" type="image/png" />\n    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">\n    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">\n    ' + (vo.mainCSSBundle ? '<link rel="stylesheet" type="text/css" href="' + vo.mainCSSBundle + '">' : '') + '\n\n    ' + vo.helmet.title.toString() + '\n    ' + vo.helmet.meta.toString() + '\n    ' + vo.helmet.link.toString() + '\n    <style data-aphrodite>' + vo.css.content + '</style>\n    <script>\n      window.renderedClassNames = ' + JSON.stringify(vo.css.renderedClassNames) + '\n    </script>\n  </head>\n\n  <body ' + vo.helmet.bodyAttributes.toString() + '>\n    <div id="root"><div>' + vo.root + '</div></div>\n    ' + getDeferScript(vo.manifestJSBundle) + '\n    ' + getDeferScript(vo.vendorJSBundle) + '\n    ' + getDeferScript(vo.mainJSBundle) + '\n  </body>\n\n</html>\n\n';
+  return '\n\n<!DOCTYPE html>\n<html lang="en">\n\n  <head>\n    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />\n    <meta charSet=\'utf-8\' />\n    <meta httpEquiv="Content-Language" content="en" />\n    <meta name="viewport" content="width=device-width, initial-scale=1">\n\n    <link id="favicon" rel="shortcut icon" href="/kyt-favicon.png" sizes="16x16 32x32" type="image/png" />\n    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">\n    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">\n    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">\n    ' + (vo.mainCSSBundle ? '<link rel="stylesheet" type="text/css" href="' + vo.mainCSSBundle + '">' : '') + '\n\n    ' + vo.helmet.title.toString() + '\n    ' + vo.helmet.meta.toString() + '\n    ' + vo.helmet.link.toString() + '\n    <style data-aphrodite>' + vo.css.content + '</style>\n    <script>\n      window.renderedClassNames = ' + JSON.stringify(vo.css.renderedClassNames) + '\n    </script>\n  </head>\n\n  <body ' + vo.helmet.bodyAttributes.toString() + '>\n    <div id="root"><div>' + vo.root + '</div></div>\n    ' + getDeferScript(vo.manifestJSBundle) + '\n    ' + getDeferScript(vo.vendorJSBundle) + '\n    ' + getDeferScript(vo.mainJSBundle) + '\n  </body>\n\n</html>\n\n';
 };
 
 /***/ }),
@@ -240,9 +240,7 @@ var _materialUi = __webpack_require__(12);
 
 var _Input = __webpack_require__(13);
 
-__webpack_require__(14);
-
-var _queryString = __webpack_require__(15);
+var _queryString = __webpack_require__(14);
 
 var _queryString2 = _interopRequireDefault(_queryString);
 
@@ -573,19 +571,13 @@ module.exports = require("material-ui/Input");
 /* 14 */
 /***/ (function(module, exports) {
 
-module.exports = require("typeface-roboto");
+module.exports = require("query-string");
 
 /***/ }),
 /* 15 */
 /***/ (function(module, exports) {
 
-module.exports = require("query-string");
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports) {
-
-module.exports = {"main.js":"/main-5f4a34e3021da14363e3.js","main.js.map":"/main-5f4a34e3021da14363e3.js.map","manifest.js":"/manifest-4eea71398fe2b3abab45.js","manifest.js.map":"/manifest-4eea71398fe2b3abab45.js.map","roboto-latin-100italic.woff":"/87528ba9a6e829db88fd8d2b94b362b9.woff","roboto-latin-300italic.woff":"/4bcc85a50fd0d42d5e416c56b39b8d71.woff","roboto-latin-400italic.woff":"/bad78f935b0182bd83ac29a45edcdb25.woff","roboto-latin-500italic.woff":"/01ef9f5b9fc166ecdf86e02e34b8fd64.woff","roboto-latin-700italic.woff":"/42b4247cf22991d1c26d8f66eb8f38f8.woff","roboto-latin-900italic.woff":"/968fd8b51b2075525dc4780b2c7affb0.woff","vendor.css":"/vendor-a22ac4621ceddd20f7e9.css","vendor.css.map":"/vendor-a22ac4621ceddd20f7e9.css.map","vendor.js":"/vendor-a22ac4621ceddd20f7e9.js","vendor.js.map":"/vendor-a22ac4621ceddd20f7e9.js.map"}
+module.exports = {"main.js":"/main-c9893d89c9d08ef51559.js","main.js.map":"/main-c9893d89c9d08ef51559.js.map","manifest.js":"/manifest-cd1fab483180518db972.js","manifest.js.map":"/manifest-cd1fab483180518db972.js.map","vendor.js":"/vendor-72573af8683f92e2ee80.js","vendor.js.map":"/vendor-72573af8683f92e2ee80.js.map"}
 
 /***/ })
 /******/ ]);
