@@ -1,6 +1,15 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { AppBar, Toolbar, Typography, Input, FormControl, Select, TextField } from 'material-ui';
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Input,
+  FormControl,
+  Select,
+  TextField,
+  Button,
+} from 'material-ui';
 import { InputLabel } from 'material-ui/Input';
 import queryString from 'query-string';
 import { StyleSheet, css } from 'aphrodite';
@@ -94,6 +103,10 @@ export default class App extends React.Component {
     this.setState({ [name]: value });
   };
 
+  handleClick = () => {
+    window.location = this.generateLink();
+  };
+
   render() {
     const { device, network, code } = this.state;
 
@@ -153,7 +166,9 @@ export default class App extends React.Component {
           </div>
           <div className={css(styles.output)}>
             {link !== ''
-              ? <a href={link}>Click here to activate.</a>
+              ? <Button raised color="primary" onClick={this.handleClick}>
+                  Click Here to Activate
+                </Button>
               : <span>
                   You must select a network and enter the activation code on your screen.
                 </span>}
@@ -180,5 +195,7 @@ const styles = StyleSheet.create({
   },
   output: {
     width: 250,
+    display: 'flex',
+    justifyContent: 'space-around',
   },
 });
