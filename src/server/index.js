@@ -4,6 +4,7 @@ import path from 'path';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { Helmet } from 'react-helmet';
+import { StyleSheetServer } from 'aphrodite';
 
 import template from './template';
 import App from '../components/App';
@@ -23,9 +24,12 @@ app.use(express.static(path.join(process.cwd(), KYT.PUBLIC_DIR)));
 
 // Setup server side routing.
 app.get('*', (request, response) => {
+  const { html: root, css } = StyleSheetServer.renderStatic(() => renderToString(<App />));
+
   response.status(200).send(
     template({
-      root: renderToString(<App />),
+      root,
+      css,
       helmet: Helmet.renderStatic(),
       manifestJSBundle: clientAssets['manifest.js'],
       mainJSBundle: clientAssets['main.js'],
