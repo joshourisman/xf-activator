@@ -137,7 +137,7 @@ var _App2 = _interopRequireDefault(_App);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var clientAssets = __webpack_require__(15); // eslint-disable-line import/no-dynamic-require
-var port = parseInt("3000", 10);
+var port = parseInt(process.env.PORT || "3000", 10);
 var app = (0, _express2.default)();
 
 // Remove annoying Express header addition.
