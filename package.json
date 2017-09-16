@@ -1,9 +1,9 @@
 {
-  "name": "",
-  "version": "1.0.0",
-  "description": "",
+  "name": "xf-activation",
+  "version": "0.0.0",
+  "description": "A simple app for activating 'unsuported' Comcast apps.",
   "main": "",
-  "author": "",
+  "author": "Josh Ourisman",
   "license": "",
   "dependencies": {
     "babel-preset-kyt-react": "0.2.0",
