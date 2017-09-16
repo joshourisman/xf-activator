@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { AppBar, Toolbar, Typography, Input, FormControl, Select, TextField } from 'material-ui';
 import { InputLabel } from 'material-ui/Input';
-import 'typeface-roboto';
 import queryString from 'query-string';
 import { StyleSheet, css } from 'aphrodite';
 
