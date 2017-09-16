@@ -59,7 +59,7 @@ module.exports =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "http://localhost:3001/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 3);
@@ -147,7 +147,7 @@ app.disable('x-powered-by');
 app.use((0, _compression2.default)());
 
 // Setup the public directory so that we can server static assets.
-app.use(_express2.default.static(_path2.default.join(process.cwd(), "src/public")));
+app.use(_express2.default.static(_path2.default.join(process.cwd(), "build/public")));
 
 // Setup server side routing.
 app.get('*', function (request, response) {
@@ -351,6 +351,10 @@ var App = function (_React$Component) {
       };
     };
 
+    _this.handleClick = function () {
+      window.location = _this.generateLink();
+    };
+
     _this.state = {
       device: 'appletv',
       network: '',
@@ -519,9 +523,9 @@ var App = function (_React$Component) {
             'div',
             { className: (0, _aphrodite.css)(styles.output) },
             link !== '' ? _react2.default.createElement(
-              'a',
-              { href: link },
-              'Click here to activate.'
+              _materialUi.Button,
+              { raised: true, color: 'primary', onClick: this.handleClick },
+              'Click Here to Activate'
             ) : _react2.default.createElement(
               'span',
               null,
@@ -554,7 +558,9 @@ var styles = _aphrodite.StyleSheet.create({
     marginBottom: 50
   },
   output: {
-    width: 250
+    width: 250,
+    display: 'flex',
+    justifyContent: 'space-around'
   }
 });
 
@@ -580,7 +586,7 @@ module.exports = require("query-string");
 /* 15 */
 /***/ (function(module, exports) {
 
-module.exports = {"main.js":"http://localhost:3001/main.js"}
+module.exports = {"main.js":"/main-1a30916311951d4f40f3.js","main.js.map":"/main-1a30916311951d4f40f3.js.map","manifest.js":"/manifest-78b8f7896ebb98fac828.js","manifest.js.map":"/manifest-78b8f7896ebb98fac828.js.map","vendor.js":"/vendor-72573af8683f92e2ee80.js","vendor.js.map":"/vendor-72573af8683f92e2ee80.js.map"}
 
 /***/ })
 /******/ ]);
