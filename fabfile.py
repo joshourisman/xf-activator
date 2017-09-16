@@ -11,7 +11,7 @@ from fabric.utils import puts
 def release(part='patch'):
     new_version = increment_version(part)
     local('git flow release start {}'.format(new_version))
-    write_version(new_version)
+    write_version(new_version=new_version)
     local('git commit -a -m "Upped version."')
     local('yarn build')
     local('git commit -a -m "Built."')
