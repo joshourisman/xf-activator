@@ -36,6 +36,6 @@
     "lint-script": "kyt lint-script",
     "lint-style": "kyt lint-style",
     "kyt:help": "kyt --help",
-    "postinstall": "kyt build"
+    "postinstall": "yarn install --pure-lockfile --production=false && kyt build"
   }
 }
