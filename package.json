@@ -1,6 +1,6 @@
 {
   "name": "xf-activation",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A simple app for activating 'unsuported' Comcast apps.",
   "main": "",
   "author": "Josh Ourisman",
@@ -36,6 +36,6 @@
     "lint-script": "kyt lint-script",
     "lint-style": "kyt lint-style",
     "kyt:help": "kyt --help",
-    "postinstall": "kyt build"
+    "postinstall": "yarn install --pure-lockfile --production=false && kyt build"
   }
 }
