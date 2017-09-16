@@ -351,6 +351,10 @@ var App = function (_React$Component) {
       };
     };
 
+    _this.handleClick = function () {
+      window.location = _this.generateLink();
+    };
+
     _this.state = {
       device: 'appletv',
       network: '',
@@ -517,11 +521,11 @@ var App = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            null,
+            { className: (0, _aphrodite.css)(styles.output) },
             link !== '' ? _react2.default.createElement(
-              'a',
-              { href: link },
-              'Click here to activate.'
+              _materialUi.Button,
+              { raised: true, color: 'primary', onClick: this.handleClick },
+              'Click Here to Activate'
             ) : _react2.default.createElement(
               'span',
               null,
@@ -548,10 +552,15 @@ var styles = _aphrodite.StyleSheet.create({
   },
   inputs: {
     display: 'flex',
-    justifyContent: 'space-evenly',
-    width: '100%',
+    flexDirection: 'column',
+    width: 250,
     marginTop: 10,
     marginBottom: 50
+  },
+  output: {
+    width: 250,
+    display: 'flex',
+    justifyContent: 'space-around'
   }
 });
 
@@ -577,7 +586,7 @@ module.exports = require("query-string");
 /* 15 */
 /***/ (function(module, exports) {
 
-module.exports = {"main.js":"/main-c9893d89c9d08ef51559.js","main.js.map":"/main-c9893d89c9d08ef51559.js.map","manifest.js":"/manifest-cd1fab483180518db972.js","manifest.js.map":"/manifest-cd1fab483180518db972.js.map","vendor.js":"/vendor-72573af8683f92e2ee80.js","vendor.js.map":"/vendor-72573af8683f92e2ee80.js.map"}
+module.exports = {"main.js":"/main-1a30916311951d4f40f3.js","main.js.map":"/main-1a30916311951d4f40f3.js.map","manifest.js":"/manifest-78b8f7896ebb98fac828.js","manifest.js.map":"/manifest-78b8f7896ebb98fac828.js.map","vendor.js":"/vendor-72573af8683f92e2ee80.js","vendor.js.map":"/vendor-72573af8683f92e2ee80.js.map"}
 
 /***/ })
 /******/ ]);
