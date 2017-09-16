@@ -59,7 +59,7 @@ module.exports =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/";
+/******/ 	__webpack_require__.p = "http://localhost:3001/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 3);
@@ -147,7 +147,7 @@ app.disable('x-powered-by');
 app.use((0, _compression2.default)());
 
 // Setup the public directory so that we can server static assets.
-app.use(_express2.default.static(_path2.default.join(process.cwd(), "build/public")));
+app.use(_express2.default.static(_path2.default.join(process.cwd(), "src/public")));
 
 // Setup server side routing.
 app.get('*', function (request, response) {
@@ -517,7 +517,7 @@ var App = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            null,
+            { className: (0, _aphrodite.css)(styles.output) },
             link !== '' ? _react2.default.createElement(
               'a',
               { href: link },
@@ -548,10 +548,13 @@ var styles = _aphrodite.StyleSheet.create({
   },
   inputs: {
     display: 'flex',
-    justifyContent: 'space-evenly',
-    width: '100%',
+    flexDirection: 'column',
+    width: 250,
     marginTop: 10,
     marginBottom: 50
+  },
+  output: {
+    width: 250
   }
 });
 
@@ -577,7 +580,7 @@ module.exports = require("query-string");
 /* 15 */
 /***/ (function(module, exports) {
 
-module.exports = {"main.js":"/main-c9893d89c9d08ef51559.js","main.js.map":"/main-c9893d89c9d08ef51559.js.map","manifest.js":"/manifest-cd1fab483180518db972.js","manifest.js.map":"/manifest-cd1fab483180518db972.js.map","vendor.js":"/vendor-72573af8683f92e2ee80.js","vendor.js.map":"/vendor-72573af8683f92e2ee80.js.map"}
+module.exports = {"main.js":"http://localhost:3001/main.js"}
 
 /***/ })
 /******/ ]);

@@ -151,7 +151,7 @@ export default class App extends React.Component {
             </FormControl>
             <TextField label="Activation Code" value={code} onChange={this.handleSelect('code')} />
           </div>
-          <div>
+          <div className={css(styles.output)}>
             {link !== ''
               ? <a href={link}>Click here to activate.</a>
               : <span>
@@ -173,9 +173,12 @@ const styles = StyleSheet.create({
   },
   inputs: {
     display: 'flex',
-    justifyContent: 'space-evenly',
-    width: '100%',
+    flexDirection: 'column',
+    width: 250,
     marginTop: 10,
     marginBottom: 50,
+  },
+  output: {
+    width: 250,
   },
 });

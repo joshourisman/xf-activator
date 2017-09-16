@@ -1,8 +1,3 @@
 {
-  "main.js": "/main-c9893d89c9d08ef51559.js",
-  "main.js.map": "/main-c9893d89c9d08ef51559.js.map",
-  "manifest.js": "/manifest-cd1fab483180518db972.js",
-  "manifest.js.map": "/manifest-cd1fab483180518db972.js.map",
-  "vendor.js": "/vendor-72573af8683f92e2ee80.js",
-  "vendor.js.map": "/vendor-72573af8683f92e2ee80.js.map"
+  "main.js": "http://localhost:3001/main.js"
 }
