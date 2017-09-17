@@ -28,6 +28,16 @@ export default vo => `
     <script>
       window.renderedClassNames = ${JSON.stringify(vo.css.renderedClassNames)}
     </script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-60956755-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-60956755-2');
+    </script>
+
   </head>
 
   <body ${vo.helmet.bodyAttributes.toString()}>
