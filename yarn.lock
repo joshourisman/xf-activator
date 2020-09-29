@@ -145,12 +145,12 @@ anymatch@^1.3.0:
     micromatch "^2.1.5"
     normalize-path "^2.0.0"
 
-aphrodite@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/aphrodite/-/aphrodite-1.2.4.tgz#5dc1622aa6f1b02c775e1f1ed850df08839e203c"
+aphrodite@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/aphrodite/-/aphrodite-2.4.0.tgz#ec1a2afa41ba7310a47a4f1fba27919d99572c91"
   dependencies:
     asap "^2.0.3"
-    inline-style-prefixer "^3.0.1"
+    inline-style-prefixer "^5.1.0"
     string-hash "^1.1.3"
 
 append-transform@^0.4.0:
@@ -1254,10 +1254,6 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bowser@^1.6.0:
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/bowser/-/bowser-1.7.3.tgz#504bdb43118ca8db9cbbadf28fd60f265af96e4f"
-
 brace-expansion@^1.1.7:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.8.tgz#c07b211c7c952ec1f8efd51a77ef0d1d3990a292"
@@ -1900,11 +1896,12 @@ css-color-names@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
 
-css-in-js-utils@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/css-in-js-utils/-/css-in-js-utils-1.0.3.tgz#9ac7e02f763cf85d94017666565ed68a5b5f3215"
+css-in-js-utils@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/css-in-js-utils/-/css-in-js-utils-2.0.1.tgz#3b472b398787291b47cfe3e44fecfdd9e914ba99"
   dependencies:
     hyphenate-style-name "^1.0.2"
+    isobject "^3.0.1"
 
 css-loader@0.28.2:
   version "0.28.2"
@@ -3606,12 +3603,11 @@ ini@~1.3.0:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.4.tgz#0537cb79daf59b59a1a517dff706c86ec039162e"
 
-inline-style-prefixer@^3.0.1:
-  version "3.0.7"
-  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-3.0.7.tgz#0ccc92e5902fe6e0d28d975c4258443f880615f8"
+inline-style-prefixer@^5.1.0:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-5.1.2.tgz#e5a5a3515e25600e016b71e39138971228486c33"
   dependencies:
-    bowser "^1.6.0"
-    css-in-js-utils "^1.0.3"
+    css-in-js-utils "^2.0.0"
 
 inquirer@1.2.1:
   version "1.2.1"
